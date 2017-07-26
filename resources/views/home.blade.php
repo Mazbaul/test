@@ -7,15 +7,14 @@
           <div class="col-md-12">
 
               @foreach($product as $product)
-                  <tr>
-                      <td>{{$product->product_name}}</td>
-                      <td>{{$product->product_details}}</td>
+                  <div class="col-md-4 col-md-offset-2 well ">
+                    <a href="{{ url('/home')}}" > <td>{{$product->product_name}}</td>
                       <td>{{$product->product_code}}</td>
                       <td>{{$product->price}}</td>
-                      <td>{{$product->company_name}}</td>
-                  </tr>
+                    </a>
+                  </div>
               @endforeach
-          
+
       </div>
         </div>
     </div>
