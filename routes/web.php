@@ -15,3 +15,4 @@
 Auth::routes();
 Route::get('/', 'WelcomeController@welcome');
 Route::get('/home', 'HomeController@index')->name('home');
+Route::resource('/products', 'ProductController');
